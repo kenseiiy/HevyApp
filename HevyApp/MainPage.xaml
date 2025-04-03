@@ -1,0 +1,22 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="HevyApp.MainPage"
+              >
+    <Grid>
+        <!-- Background Image -->
+        <Image Source="login_background.png" Aspect="AspectFill" />
+
+        <!-- Logo -->
+        <Image Source="hevylogo.png" HeightRequest="90" Margin="-5" HorizontalOptions="Start" VerticalOptions="Start" />
+
+        <!-- Sign-up buttons -->
+        <VerticalStackLayout VerticalOptions="End" HorizontalOptions="Center" Padding="20,0,20,50" Spacing="10">
+            <Button Text="Sign up with Apple" WidthRequest="300" HeightRequest="50" BackgroundColor="White" TextColor ="Black" FontSize="16" Clicked="OnLoginButtonClicked"/>
+            <Button Text="Sign up with Google" WidthRequest="300" HeightRequest="50" BackgroundColor="White" TextColor="Black" FontSize="16" Clicked="OnLoginButtonClicked"/>
+            <Button Text="Sign up with email" WidthRequest="300" HeightRequest="50" BackgroundColor="#007AFF" TextColor="White" FontSize="16" Clicked="OnLoginButtonClicked"/>
+
+            <!-- Login Text -->
+            <Label Text="Already have an account? Log in" TextColor="White" FontSize="14" HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
